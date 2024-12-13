@@ -437,7 +437,137 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-list">
+            <label class="footer-subscribe-list-item">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="footer-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-subscribe-button" type="submit">
+              Subscribe
+              <svg class="plane" width="24" height="24">
+                <use href="./images/icons.svg#plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="form-action" name="review-form">
+          <!-- Name -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-name"> Name </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                minlength="3"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone"> Phone </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder=" "
+                pattern="\+38 \(0\d{2}\) \d{3} \d{2} \d{2}"
+                title="Please follow next format +38 (099) 123 45 67"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- email -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email"> Email </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="modal-form-field-comment">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
+          </div>
+
+          <!-- agreement -->
+          <div class="modal-form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="modal-form-agreement-desc" for="user-privacy">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+          <!-- button -->
+          <button class="hero-button modal_send_button" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
